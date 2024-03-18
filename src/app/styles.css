@@ -1,0 +1,10 @@
+/* Responsive styles for smaller screens */
+.responsive .flex {
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 1rem; /* Add spacing between elements */
+  }
+  
+  .responsive .flex label {
+    margin-bottom: 0.5rem; /* Adjust label spacing */
+  }
+  
