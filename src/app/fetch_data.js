@@ -79,7 +79,7 @@ export default function ExpenseList() {
   
 
   return (
-    <div className="container mx-auto px-7 py-4 my-0"> {/* Center the content with padding */}
+    <div className="container mx-auto py-4 my-0"> {/* Center the content with padding */}
       <div className="filters flex flex-wrap justify-center gap-2 mb-4"> {/* Style filters */}
       <button
           onClick={() => handleFilterClick('Maruthi-Zen')}
@@ -118,19 +118,19 @@ export default function ExpenseList() {
           By Rental Vehicle
         </button>
       </div>
-
-      <table className="w-full divide-y divide-gray-200 mt-10 flex-col justify-center">
+      <div className="overflow-x-auto p-1">
+      <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
         {/* Remove margin-top */}
-        <thead>
-          <tr className="h-10 bg-gray-500 text-white p-4">
-            <th className="px-4 py-2 text-xs">Date</th>
-            <th className="px-4 py-2 text-xs">Vehicle Name</th>
-            <th className="px-4 py-2 text-xs">Diesel</th>
-            <th className="px-4 py-2 text-xs">Fast Tag</th>
-            <th className="px-4 py-2 text-xs">Maintenance</th>
-            <th className="px-4 py-2 text-xs">Rental Cost</th>
-            <th className="px-4 py-2 text-right text-xs text-red-400">Total</th>
-            <th className="px-4 py-2 text-xs">Action</th>
+        <thead className="ltr:text-left rtl:text-right">
+          <tr>
+          <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Date</th>
+             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Vehicle Name</th>
+             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Diesel</th>
+             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Fast Tag</th>
+             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Maintenance</th>
+             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Rental Cost</th>
+             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Total</th>
+             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Action</th>
 
           </tr>
         </thead>
@@ -211,6 +211,7 @@ export default function ExpenseList() {
 
 
       </table>
+      </div>
 
 
 

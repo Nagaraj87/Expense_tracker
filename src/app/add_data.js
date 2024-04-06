@@ -73,7 +73,11 @@ export default function VehicleForm() {
   };
 
   return (
-    <div className="flex justify-center items-center mt-8 mb-8">
+<>
+<div className="grid grid-cols-1 gap-4 lg:grid-cols-1 lg:gap-8">
+  <div className="lg:rounded-lg bg-gray-200">
+
+  <div className="flex justify-center items-center mt-8 mb-8">
       {/* Button to toggle form visibility */}
       {!showForm && (
         <button
@@ -209,5 +213,19 @@ export default function VehicleForm() {
         </div>
       )}
     </div>
+
+
+
+
+
+
+
+
+  </div>
+  
+</div>
+
+    
+    </>
   );
 }
